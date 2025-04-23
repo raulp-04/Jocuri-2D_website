@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE persoane SYSTEM "persoane.dtd">
+    <persoane 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="family.xsd">
+        <persoana id="1">
+            <nume>Popescu</nume>
+            <prenume>Ion</prenume>
+            <varsta>23</varsta>
+            <adresa>
+                <strada>Brancusi</strada>
+                <numar>45</numar>
+                <localitate>Iasi</localitate>
+                <judet>Iasi</judet>
+                <tara>Romania</tara>
+            </adresa>
+            <email>ionPop@gmail.com</email>
+            <nrTelefon>0785498723</nrTelefon>
+        </persoana>
+
+        <persoana id="2">
+            <nume>Ceasar</nume>
+            <prenume>Julius</prenume>
+            <varsta>52</varsta>
+            <adresa>
+                <strada>Eminescu</strada>
+                <numar>4</numar>
+                <localitate>Vaslui</localitate>
+                <judet>Vaslui</judet>
+                <tara>Romania</tara>
+            </adresa>
+            <email>romaceamaitare@gmail.com</email>
+            <nrTelefon>0765349182</nrTelefon>
+        </persoana>
+
+        <persoana id="3">
+            <nume>Mihaila</nume>
+            <prenume>Mihai</prenume>
+            <varsta>31</varsta>
+            <adresa>
+                <strada>Zambilelor</strada>
+                <numar>89</numar>
+                <localitate>Hudesti</localitate>
+                <judet>Botosani</judet>
+                <tara>Romania</tara>
+            </adresa>
+            <email>mihaitaCelFrumos@gmail.com</email>
+            <nrTelefon>0786444987</nrTelefon>
+        </persoana>
+    </persoane>

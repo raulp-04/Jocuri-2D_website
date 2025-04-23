@@ -1,0 +1,304 @@
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(7, 96, 111);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 20px 25vw 20px 25vw;
+}
+nav a {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    padding: 0 15px 0 15px;
+    cursor: pointer;
+}
+nav a:hover {
+    font-size: 33px;
+}
+nav img{
+    align-items: baseline;
+    height: 40px;
+}
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 900px) {
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgb(7, 96, 111);
+        display: flex;
+        flex-wrap: wrap;
+        width: 150px;
+        padding: 10px 10px 10px 10px;
+    }
+    nav a {
+        font-size: 15px;
+        color: white;
+        flex: 50%;
+        flex-direction: column;
+        text-decoration: none;
+        padding: 0 15px 0 15px;
+        cursor: pointer;
+    }
+    nav a:hover {
+        font-size: 18px;
+    }
+    nav img{
+        align-items: baseline;
+        height: 35px;
+    }
+    .column {
+        flex: 16%;
+    }
+    main {
+        margin-left: 300px;
+        padding: 0 10vw 0 10vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+main {
+    margin-top: 100px;
+    padding: 0 10vw 0 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   
+main .divMain{
+    background-image: linear-gradient(to bottom right,rgb(38, 133, 162) ,rgb(7, 96, 111)); /*Elem. 1*/
+    width: 80vw;
+    padding: 1px 10px 0 10px;
+    min-height: 90vh;
+}
+body {
+    background: url("../Imagini/background.jpg") fixed center;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+.tabel-despre {
+    border-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tabel-despre th,td{
+    font-size: 30px;
+    border-color: rgb(0, 0, 0);
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px 5px 5px 5px;
+}
+/*PSEUDO ELEMENT SI PSEUDOCLASA*/
+.p-despre::first-line{
+    color:rgb(165, 232, 255);
+}
+input:focus {
+    background-color: rgb(175, 175, 175);
+}
+
+.anim1 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(217, 250, 1);
+    animation-name: color_change;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes color_change {
+    0% {background-color: rgb(217, 250, 1);}
+    50% {background-color: rgb(27, 130, 17);}
+    100% {background-color: rgb(217, 250, 1);}
+}
+
+.elem3 {
+    writing-mode: vertical-rl;
+}
+.elem4 {
+    border-radius: 25px;
+    border-left: solid;
+    border-left-color:black;
+    border-width: 5px;
+    background-color: rgba(0,0,0,0.2);
+}
+
+/*inregistreaza.html*/
+select{
+    padding: 3px 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+label, input, form {
+    display: inline-block;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.img-copac{
+    display: inline-block   ;
+    height: 600px;
+    margin: auto;
+}
+.container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+   }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-container > iframe {
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+ /*invat.html*/
+.aside_inv {
+    font-size: 30px;
+    position: fixed;
+    right: 0;
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    border-color: black;
+}
+.aside_inv a {
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    color: black;
+}
+.section {
+    font-size: 20px;
+}
+canvas {
+    border: 1px solid black;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.table3 {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.table3, th, td {
+    border: 1px solid black;
+}
+
+.table3 th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+.input-section {
+    margin: 20px 0;
+}
+
+.input-section input {
+    margin: 5px;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+}
+
+.p_frumos {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.tabel_xml table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tabel_xml th, td, tr{
+    border-color: white;
+    font-size: 20px
+}
+
+.shop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shop input, button {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.shop_title {
+    font-size: 30px;
+}
+
+.shop button {
+    background-color: green;
+    color: white;
+}
+.shop button:hover {
+    background-color: rgb(1, 73, 1);
+    color: white;
+}
+
+.shop_table {
+    margin: auto;
+}
+
+.shop_table th, td {
+    padding: 5px;
+    border: 3px solid black;
+}
+
+.login_title {
+    font-size: 30px;
+}
+
+.login_box {
+    text-align: center;
+    background-color: red;
+}
+.login_box input, button{
+        padding: 10px;
+        margin: 10px;
+}

@@ -1,0 +1,69 @@
+<!--AM RAMAS LA TEMA - 2 SUB. e)-->
+<!DOCTYPE html>
+<html lang="ro-RO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parasca Raul</title>
+    <link rel="icon" href="Imagini/cat-head.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function schimbaContinut(site, jsFisier, jsFunctie) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("continut").innerHTML =
+                    this.responseText;
+
+                    if (jsFisier) {
+                        var elementScript = document.createElement('script');
+                        elementScript.onload = function () {
+                            if(jsFunctie) {
+                                let func = jsFunctie.split(" ");
+                                for(let i in func) {
+                                    if(func[i]){
+                                        window[func[i]]();
+                                    }
+                                }
+                            }
+                        };
+                        elementScript.src = jsFisier;
+                        document.head.appendChild(elementScript);
+                    } else {
+                        if (jsFunctie) {
+                            let func = jsFunctie.split(" ");
+                            for(let i in func) {
+                                if(func[i]){
+                                    window[func[i]]();
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+            xhttp.open("GET", site + ".html", true);
+            xhttp.send();
+            
+        }
+    </script>
+</head>
+
+<body onload="schimbaContinut('acasa')">
+    <nav>
+        <img class="coloana" src="favicon.ico" alt="Logo">
+        <a class="coloana" onclick="schimbaContinut('acasa')">Acasă</a>
+        <a class="coloana" onclick="schimbaContinut('despre')">Despre</a>
+        <a class="coloana" onclick="schimbaContinut('video')">Videoclipuri</a>
+        <a class="coloana" onclick="schimbaContinut('inregistreaza', 'js/inregistrare.js')">Înregistrare</a>
+        <a class="coloana" onclick="schimbaContinut('verifica', 'js/verifica.js')">Login</a>
+        <a class="coloana" onclick="schimbaContinut('cumparaturi', 'js/cumparaturi.js', 'afisareTabel')">Cumpărături</a>
+        <a class="coloana" onclick="schimbaContinut('desen')">Desen/Mascota</a>
+        <a class="coloana" onclick="schimbaContinut('invat', 'js/script.js', 'section_1 section_2')">Învăț</a>
+        <a class="coloana" onclick="schimbaContinut('persoane', 'js/persoane.js', 'incarcaPersoane')">Persoane</a>
+    </nav>
+    <main id="continut"></main>
+    <footer>
+        <p>&copy; 2025 Parasca Raul. Toate drepturile rezervate.</p>
+    </footer>
+</body>
+</html>

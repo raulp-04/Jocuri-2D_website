@@ -1,0 +1,42 @@
+<div class="divMain">
+    <h1>Jocuri 2D</h1>
+    <h3>Desen</h3>
+
+    <!--SVG cu desenul -->
+    <svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+
+        <!--Fundal-->
+        <rect width="100%" height="100%" fill="blue" />
+
+        <!--Platforme-->
+        <rect x="0" y="300" width="600" height="100" fill="orange" />
+        <text x="20" y="330" font-size="20">
+            *Lava*
+        </text>
+        <rect x="100" y="250" width="100" height="20" fill="brown" />
+        <rect x="300" y="200" width="150" height="20" fill="brown" />
+        <rect x="500" y="150" width="150" height="20" fill="brown" />
+
+        <!--Personaj-->
+        <rect x="150" y="220" width="30" height="30" fill="red">
+            <animate attributeName="y" from="220" to="200" dur="1s" begin="0s" repeatCount="indefinite" />
+            <animate attributeName="x" from="150" to="170" dur="1s" begin="0s" repeatCount="indefinite" />
+        </rect>
+
+        <!--Text-->
+        <text x="20" y="30" font-size="20" fill="white">
+            Aventura începe acum!
+        </text>
+
+        <!--Cerc(banut)-->
+        <circle cx="250" cy="100" r="20" fill="yellow">
+            <animate attributeName="cx" from="250" to="450" dur="2s" begin="0s" repeatCount="indefinite" />
+        </circle>
+        <text x="260" y="107" font-size="20">
+            C
+            <animate attributeName="x" from="243" to="443" dur="2s" begin="0s" repeatCount="indefinite" />
+        </text>
+    </svg>
+
+    <div class="anim1"></div>
+</div>

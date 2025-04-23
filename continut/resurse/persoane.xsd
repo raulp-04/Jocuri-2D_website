@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+elementFormDefault="qualified">
+
+<!--Definirea elementelor simple-->
+<xs:element name="nume" type="xs:string"/>
+<xs:element name="prenume" type="xs:string"/>
+<xs:element name="varsta" type="xs:positiveInteger"/>
+<!--Definirea elementelor simple din 'adresa'-->
+<xs:element name="strada" type="xs:string"/>
+<xs:element name="numar" type="xs:string"/>
+<xs:element name="localitate" type="xs:string"/>
+<xs:element name="judet" type="xs:string"/>
+<xs:element name="tara" type="xs:string"/>
+<!--STOP-->
+<xs:element name="email" type="xs:string"/>
+<xs:element name="nrTelefon" type="xs:string"/>
+
+<!--Definirea elementelor complexe-->
+<xs:element name="adresa">
+  <xs:complexType>
+    <xs:sequence>
+    <xs:element ref="strada"/>
+    <xs:element ref="numar"/>
+    <xs:element ref="localitate"/>
+    <xs:element ref="judet"/>
+    <xs:element ref="tara"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="persoana">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="nume"/>
+      <xs:element ref="prenume"/>
+      <xs:element ref="varsta"/>
+      <xs:element ref="adresa"/>
+      <xs:element ref="email"/>
+      <xs:element ref="nrTelefon"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="persoane">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="nume" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

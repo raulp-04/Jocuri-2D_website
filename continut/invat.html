@@ -1,0 +1,74 @@
+<aside class="aside_inv">
+    <a href="#section_1">Secțiunea 1</a>
+    <a href="#section_2">Secțiunea 2</a>
+    <a href="#section_3">Secțiunea 3</a>
+</aside>
+<div class="divMain">
+    <!--SECTION 1-->
+    <div class="section" id="section_1">
+        <h3>Secțiunea 1</h3>
+        <p id="pid_date"></p> <!--Data curentă și timpul-->
+        <p id="pid_url"></p> <!--Url-ul paginii-->
+        <p id="pid_location">Locația: </p> <!--Locația utilizatorului-->
+        <p id="pid_browser"></p> <!--Browserul și versiunea sa-->
+        <p id="pid_os"></p> <!--OS-ul utilizatorului-->
+    </div><hr>
+    
+    <!--SECTION 2-->
+    <div class="section" id="section_2">
+        <h3>Secțiunea 2</h3>
+        <label>Fill color</label>
+        <input type="color" id="fillid">
+        <label>Stroke color</label>
+        <input type="color" id="strokeid"><br>
+        <canvas id="canvasid" width="300" height="200"></canvas>
+        <p id="pid_mouse"></p>
+    </div>
+    <hr>    
+    <!--SECTION 3-->
+    <div class="section" id="section_3">
+        <h3>Secțiunea 3</h3>
+
+        <div class="input-section">
+            <label for="rowPosition">Poziția rândului/coloanei:</label>
+            <input type="number" id="rowPosition" placeholder="Număr rând/coloană" min="1">
+            <label for="colorPicker">Culoare de fundal:</label>
+            <input type="color" id="colorPicker">
+            <br>
+    
+            <label for="rowContent">Conținut pentru rând (separate prin virgule):</label>
+            <input type="text" id="rowContent" placeholder="Ex: Celulă1, Celulă2, Celulă3">
+            <br>
+    
+            <label for="colContent">Conținut pentru coloană (separate prin virgule):</label>
+            <input type="text" id="colContent" placeholder="Ex: Celulă1, Celulă2, Celulă3">
+            <br>
+    
+            <button onclick="insertRow()">Adaugă rând</button>
+            <button onclick="insertColumn()">Adaugă coloană</button>
+        </div>
+
+        <table id="dynamicTable" class="table3">
+            <thead>
+                <tr>
+                    <th>Jocul</th>
+                    <th>Nota</th>
+                    <th>Genul</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Undertale</td>
+                    <td>10</td>
+                    <td>RPG</td>
+                </tr>
+                <tr>
+                    <td>Hollow Knight</td>
+                    <td>10</td>
+                    <td>Platformer</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="js/script.js"></script>

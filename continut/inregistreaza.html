@@ -1,0 +1,58 @@
+<div class="divMain">
+    <!--Header-->
+    <h1>Jocurile 2D</h1>
+    <h3>Înregistrare</h3><br>
+
+    <div class="container">
+        <img src="Imagini/tree.png" alt="Copac" class="img-copac">
+        <!--Formular-->
+        <form action="javascript:;" onsubmit=" Sign_Up( this ) ">
+            <fieldset>
+                <legend>Formular:</legend>
+                <label><b>Informații generale</b></label><br>
+                <label for="u_name">Nume utilizator:</label><br>
+                <input type="text" id="u_name" name="u_name" autofocus required><br>
+                <label for="pwd">Parolă:</label><br>
+                <input type="password" id="pwd" name="pwd" required><br>
+                <label for="nume">Nume:</label><br>
+                <input type="text" id="nume" name="nume"><br>
+                <label for="prenume">Prenume:</label><br>
+                <input type="text" id="prenume" name="prenume"><br>
+                <label for="u_email">Email:</label><br>
+                <input type="email" id="u_email" name="u_email"><br>
+                <label for="u_telefon">Telefon:</label><br>
+                <input type="tel" id="u_telefon" name="u_telefon"><br><br>
+
+                <label><b>Informații personale</b></label><br>
+                <label for="sexul">Sexul:</label>
+                <select name="sexul" id="sexul">
+                    <option value="masc">Masculin</option>
+                    <option value="fem">Feminin</option>
+                    <option value="alt">Altceva</option>
+                </select><br>
+                <label for="food">Mâncarea favorită:</label>
+                <input list="foods" name="food" id="food">
+                <datalist id="foods">
+                    <option value="paste"></option>
+                    <option value="fasole"></option>
+                    <option value="pizza"></option>
+                    <option value="cereale"></option>
+                </datalist><br>
+                <label for="favcolor">Culoarea preferată:</label>
+                <input type="color" id="favcolor" name="favcolor"><br>
+                <label for="birthday">Ziua de naștere:</label>
+                <input type="date" id="birthday" name="birthday" ><br>  
+                <label for="b_time">Ora nașterii:</label>
+                <input type="time" id="b_time" name="b_time"><br>
+                <label for="age">Vârsta:</label>
+                <input type="range" id="age" name="age" min="0" max="100"><br>
+                <label for="homepage">Adresa paginii personale:</label>
+                <input type="url" id="homepage" name="homepage"><br>
+                <label>Descriere:</label><br>
+                <textarea name="message" rows="10" cols="30">Scrieți aici</textarea><br><br>
+                <input type="submit" value="Sign_Up">
+            </fieldset>
+        </form>
+        <img src="Imagini/tree.png" alt="Copac" class="img-copac">
+    </div>
+</div>
